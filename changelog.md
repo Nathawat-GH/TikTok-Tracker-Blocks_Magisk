@@ -1,7 +1,4 @@
-## Version 2024.04.21
-
-### Added
-- `changelog.md`
+## Version 2024.04.29
 
 ### Changed
-- Count version by date of `hosts` updated.
+- Update hosts list
