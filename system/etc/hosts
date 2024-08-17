@@ -4,10 +4,10 @@
 # License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 # Issues: https://github.com/hagezi/dns-blocklists/issues
 # Expires: 7 days
-# Last modified: 20 May 2024 23:13 UTC
-# Version: 2024.0520.2313.45
+# Last modified: 02 Aug 2024 22:55 UTC
+# Version: 2024.0802.2255.25
 # Syntax: Hosts (including possible subdomains)
-# Number of entries: 406
+# Number of entries: 425
 #
 0.0.0.0 docs-frontier-sg.byteoversea.com
 0.0.0.0 frontier.byteoversea.com
@@ -88,15 +88,16 @@
 0.0.0.0 gecko-pangle-lf.snssdk.com
 0.0.0.0 gecko-pangle-lq.snssdk.com
 0.0.0.0 haohuo.snssdk.com
+0.0.0.0 lark-frontier.snssdk.com
 0.0.0.0 log.snssdk.com
 0.0.0.0 log-hl.snssdk.com
 0.0.0.0 log-lf.snssdk.com
 0.0.0.0 log-lq.snssdk.com
+0.0.0.0 logtrace.snssdk.com
 0.0.0.0 mcs.snssdk.com
 0.0.0.0 mercury-sdk.snssdk.com
 0.0.0.0 mon.snssdk.com
 0.0.0.0 mon-hl.snssdk.com
-0.0.0.0 mon-lf.snssdk.com
 0.0.0.0 mssdk.snssdk.com
 0.0.0.0 mssdk-bu.snssdk.com
 0.0.0.0 open.snssdk.com
@@ -171,12 +172,12 @@
 0.0.0.0 frontier16-normal-alisg.tiktokv.com
 0.0.0.0 frontier16-normal-useast1a.tiktokv.com
 0.0.0.0 frontier16-normal-useast2a.tiktokv.com
+0.0.0.0 frontier16-normal-zr-useast1a.tiktokv.com
 0.0.0.0 frontier16-useast1a.tiktokv.com
 0.0.0.0 frontier22-normal.tiktokv.com
 0.0.0.0 frontier22-normal-alisg.tiktokv.com
 0.0.0.0 frontier22-normal-useast1a.tiktokv.com
 0.0.0.0 frontier22-normal-useast2a.tiktokv.com
-0.0.0.0 frontier32.tiktokv.com
 0.0.0.0 frontier32-normal-useast1a.tiktokv.com
 0.0.0.0 frontier32-normal-useast2a.tiktokv.com
 0.0.0.0 gecko-phx.tiktokv.com
@@ -218,6 +219,14 @@
 0.0.0.0 log15-normal-useast1a.tiktokv.com
 0.0.0.0 log15-normal-useast2a.tiktokv.com
 0.0.0.0 log16-normal.tiktokv.com
+0.0.0.0 log16-normal-alisg.tiktokv.com
+0.0.0.0 log16-normal-c-useast1a.tiktokv.com
+0.0.0.0 log16-normal-c-useast2a.tiktokv.com
+0.0.0.0 log16-normal-delay-alisg.tiktokv.com
+0.0.0.0 log16-normal-ind.tiktokv.com
+0.0.0.0 log16-normal-useast1a.tiktokv.com
+0.0.0.0 log16-normal-useast2a.tiktokv.com
+0.0.0.0 log16-normal-zr-useast1a.tiktokv.com
 0.0.0.0 log16-platform-ycru.tiktokv.com
 0.0.0.0 log16-tmp-normal-useast1a.tiktokv.com
 0.0.0.0 log17-normal.tiktokv.com
@@ -319,7 +328,6 @@
 0.0.0.0 mssdk22-normal-alisg.tiktokv.com
 0.0.0.0 mssdk22-normal-useast1a.tiktokv.com
 0.0.0.0 mssdk22-normal-useast2a.tiktokv.com
-0.0.0.0 mssdk24.tiktokv.com
 0.0.0.0 mssdk24-normal.tiktokv.com
 0.0.0.0 mssdk24-normal-alisg.tiktokv.com
 0.0.0.0 mssdk24-normal-useast1a.tiktokv.com
@@ -332,6 +340,7 @@
 0.0.0.0 pitaya-task-sg.tiktokv.com
 0.0.0.0 pitaya-task-va.tiktokv.com
 0.0.0.0 pitaya-va.tiktokv.com
+0.0.0.0 pitaya16-normal-useast1a.tiktokv.com
 0.0.0.0 rtc-logger-i18n.tiktokv.com
 0.0.0.0 rtc-logger-va.tiktokv.com
 0.0.0.0 rtlog.tiktokv.com
@@ -383,6 +392,7 @@
 0.0.0.0 gecko16-platform-useast5.us.tiktokv.com
 0.0.0.0 log.us.tiktokv.com
 0.0.0.0 log16-applog-useast5.us.tiktokv.com
+0.0.0.0 log16-normal-useast8.us.tiktokv.com
 0.0.0.0 log19-applog-useast5.us.tiktokv.com
 0.0.0.0 mcs.us.tiktokv.com
 0.0.0.0 mon.us.tiktokv.com
@@ -406,7 +416,16 @@
 0.0.0.0 rtlog19-platform-useast5.us.tiktokv.com
 0.0.0.0 xlog16-normal-useast8.us.tiktokv.com
 0.0.0.0 xlog16-platform-useast5.us.tiktokv.com
+0.0.0.0 webcast-frontier.tiktokv.com
+0.0.0.0 webcast-frontier15-normal-alisg.tiktokv.com
 0.0.0.0 webcast-frontier22-alisg.tiktokv.com
+0.0.0.0 webcast-frontier22-normal-alisg.tiktokv.com
+0.0.0.0 webcast-frontier22-normal-useast1a.tiktokv.com
+0.0.0.0 webcast-frontier22-normal-useast2a.tiktokv.com
+0.0.0.0 webcast-frontier32-alisg.tiktokv.com
+0.0.0.0 webcast-frontier32-normal-alisg.tiktokv.com
+0.0.0.0 webcast-frontier32-normal-useast1a.tiktokv.com
+0.0.0.0 webcast-frontier32-normal-useast2a.tiktokv.com
 0.0.0.0 xlog.tiktokv.com
 0.0.0.0 xlog-ru.tiktokv.com
 0.0.0.0 xlog-va.tiktokv.com
@@ -415,4 +434,3 @@
 0.0.0.0 xlog16-normal-c-useast2a.tiktokv.com
 0.0.0.0 xlog16-platform-ycru.tiktokv.com
 0.0.0.0 xlog16-tmp-normal-useast1a.tiktokv.com
-
