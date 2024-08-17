@@ -1,0 +1,38 @@
+name: Create Magisk Module
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install Zip Tool
+      run: sudo apt-get install -y zip
+
+    - name: Set up Version and Module Name
+      id: vars
+      run: |
+        MODULE_NAME="MagiskModule"
+        MODULE_VERSION=$(date +'%Y%m%d')
+        echo "module_name=$MODULE_NAME" >> $GITHUB_ENV
+        echo "module_version=$MODULE_VERSION" >> $GITHUB_ENV
+
+    - name: Create Magisk Module ZIP
+      run: |
+        mkdir -p release
+        cd module # Path to the module directory in your repository
+        zip -r9 --compression-method store "../release/${{ env.module_name }}-${{ env.module_version }}.zip" .
+
+    - name: Upload Release ZIP
+      uses: actions/upload-artifact@v3
+      with:
+        name: magisk-module-${{ env.module_version }}.zip
+        path: release/${{ env.module_name }}-${{ env.module_version }}.zip
