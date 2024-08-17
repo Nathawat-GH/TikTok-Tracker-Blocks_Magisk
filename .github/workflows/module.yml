@@ -1,9 +1,6 @@
-name: Create Magisk Module
+name: Create and Upload Magisk Module
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -17,7 +14,7 @@ jobs:
     - name: Install Zip Tool
       run: sudo apt-get install -y zip
 
-    - name: Set up Version and Module Name
+    - name: Set up Module Name and Version
       id: vars
       run: |
         MODULE_NAME="MagiskModule"
@@ -29,10 +26,13 @@ jobs:
       run: |
         mkdir -p release
         cd module # Path to the module directory in your repository
-        zip -r9 --compression-method store "../release/${{ env.module_name }}-${{ env.module_version }}.zip" .
+        zip -r9 --compression-method store "../release/install.zip" .
 
-    - name: Upload Release ZIP
-      uses: actions/upload-artifact@v3
-      with:
-        name: magisk-module-${{ env.module_version }}.zip
-        path: release/${{ env.module_name }}-${{ env.module_version }}.zip
+    - name: Commit and Push install.zip to Repository
+      run: |
+        git config user.name "github-actions"
+        git config user.email "actions@github.com"
+        cp release/install.zip .
+        git add install.zip
+        git commit -m "Add Magisk module as install.zip"
+        git push origin main
