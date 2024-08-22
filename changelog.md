@@ -1,4 +1,4 @@
-## Version 2024.08.02
+## Version 2024.08.21
 
-### Changed
-- Update hosts list
+### Update hosts list
+- Add: 0.0.0.0 pitaya-ru.tiktokv.com
