@@ -32,7 +32,7 @@ jobs:
         git config user.email "actions@github.com"
         cp release/install.zip .
         git add install.zip
-        git commit -m "Release module to update channel ${{ env.module_version }}"
+        git commit -m "Release module ${{ env.module_version }}"
         git push origin main
 
     - name: Create Tag and Release
