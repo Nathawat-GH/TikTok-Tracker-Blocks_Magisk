@@ -4,8 +4,8 @@
 # License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 # Issues: https://github.com/hagezi/dns-blocklists/issues
 # Expires: 7 days
-# Last modified: 05 Sep 2024 23:13 UTC
-# Version: 2024.0905.2313.40
+# Last modified: 01 Oct 2024 22:48 UTC
+# Version: 2024.1001.2248.41
 # Syntax: Hosts (including possible subdomains)
 # Number of entries: 431
 #
@@ -71,7 +71,6 @@
 0.0.0.0 xlog-o.byteoversea.com
 0.0.0.0 xlog-va.byteoversea.com
 0.0.0.0 xlog-va-useast2a.byteoversea.com
-0.0.0.0 sf16-muse-va.ibytedtos.com
 0.0.0.0 abtest-ch.snssdk.com
 0.0.0.0 analytics.snssdk.com
 0.0.0.0 applog.snssdk.com
@@ -144,6 +143,7 @@
 0.0.0.0 mcs-i18n.tiktok.com
 0.0.0.0 mcs-sg.tiktok.com
 0.0.0.0 mcs-va.tiktok.com
+0.0.0.0 mcs16-normal-ycru.tiktok.com
 0.0.0.0 mssdk-i18n.tiktok.com
 0.0.0.0 mssdk-quic-sg.tiktok.com
 0.0.0.0 mssdk-sg.tiktok.com
