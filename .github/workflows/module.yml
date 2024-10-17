@@ -1,4 +1,4 @@
-name: Create and Upload Magisk Module
+name: Release Magisk Module
 
 on:
   workflow_dispatch:
